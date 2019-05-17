@@ -7,6 +7,9 @@ p {
 .ngColor:hover{
     color:brown ;
 }
+.heading{
+  /* text-decoration: underline; */
+}
 
 @-webkit-keyframes pulse {
   from {

@@ -16,28 +16,28 @@
             <div class="col-lg-3 mt-4">
                     <nav id="toc" data-toggle="toc" class="sticky-top">
                         <ul class="nav navbar-nav">
-                            <li><a class="nav-link" href="#usage">Le développement Web 2.0</a></li>
+                            <li><a class="nav-link active" target-page="new-dev" href="#">Le développement Web 2.0</a></li>
                         <ul class="nav navbar-nav">
-                            <li><a class="nav-link" href="#via-data-attributes">Le front-End</a></li>
-                            <li><a class="nav-link" href="#via-javascript">Le back-End</a></li>
+                            <li><a class="nav-link" href="#">Le front-End</a></li>
+                            <li><a class="nav-link" href="#">Le back-End</a></li>
                         </ul>
-                        <li><a class="nav-link active" href="#customization">Customization</a></li>
+                        <li><a class="nav-link" target-page="angular" href="#">Présentation de Angular</a></li>
                         <ul class="nav navbar-nav">
                             <li><a class="nav-link" href="#headings">Headings</a></li>
                             <li><a class="nav-link" href="#displayed-text">Displayed text</a></li>
-                            <li><a class="nav-link active" href="#skipping">Skipping</a></li>
+                            <li><a class="nav-link" href="#skipping">Skipping</a></li>
                         </ul>
                         <li><a class="nav-link" href="#layout">Layout</a></li>
                         <li><a class="nav-link" href="#examples">Examples</a></li>
                         <li><a class="nav-link" href="#see-also">See also</a></li>
                 </nav>
             </div>
-            <div class="col-lg-8">
-                <center><img src="./images/index.png" class="pulse mt-4" width="100px" height="100px"></center>
+            <div class="col-lg-8" id="main-content">
+                <center><img src="./images/angular.png" class="pulse mt-4" width="100px" height="100px"></center>
                 <h3 class="mt-3 text-center">Présentation d'Angular</h3>
                 <div class="mt-4">
                     <p>
-                        Hi coder 🖐 ! Bienvenue sur cette présentation de Angular. Si vous vous posiez la question de savoir c'est quoi Angular 
+                        Hi coder 🖐 ! Bienvenue sur cette présentation d'Angular. Si vous vous posiez la question de savoir c'est quoi Angular 
                         ce document vous éclairera surement et vous donnera une bonne base afin de commencer dés maintenant vos projets front-end
                         avec le framework JS le plus coool.<br><br>
                         Vous pouvez retrouver tout le code de notre application de démo sur le repository <a href="https://github.com/Samba24/ngMovies">https://github.com/Samba24/ngMovies</a><br><br>
@@ -47,7 +47,7 @@
                         <i class="fa fa-medium fa-1x"></i> <a href="http://medium.com/@juniornjay">http://medium.com/@juniornjay</a>
                     </p>
                 </div>
-                <a href="./" class="offset-10 ngColor"><i class="fa fa-arrow-circle-o-right"></i> Suivant</a>
+                <a href="#" target="new-dev" id="next" class="offset-10 ngColor"><i class="fa fa-arrow-circle-o-right"></i> Suivant</a>
             </div>
         </div>
     </div>
@@ -55,6 +55,7 @@
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/bootstrap-toc.js"></script>
+<script src="./js/page-loader.js"></script>
 <script>
     $(function() {
 	  var $myToc = $('#toc');
