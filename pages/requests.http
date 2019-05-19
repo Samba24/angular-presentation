@@ -1,0 +1,1 @@
+GET http://localhost:8080/ngApi/movie?action=auth&login=zcoderboy@ngmovies.local&password=gta12345

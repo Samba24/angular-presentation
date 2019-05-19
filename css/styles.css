@@ -1,11 +1,15 @@
 p {
-  font-size: 17px;
+  font-size: 15px;
 }
 .ngColor{
     color:rgb(202, 29, 29);
 }
+#trigger-happy{
+  cursor: pointer;
+  text-decoration: underline;
+}
 .ngColor:hover{
-    color:brown ;
+    color:brown ; 
 }
 .heading{
   /* text-decoration: underline; */

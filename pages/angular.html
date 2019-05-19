@@ -1,24 +1,43 @@
 <h4 class="text-left mt-4 ml-4 heading">2 - Présentation du framework Angular</h4>
 <p>
-   Angular a tout d'abord commence par sa premiere version AngularJS lance par Google en 2012. AngularJS
-   se base sur le pattern MVC et est purement ecrit en Javascript et etait destiné à découpler la logique d’une application 
+   La première version d'Angular (AngularJS) a été lancé par Google en 2012. Ce dernier
+   se base sur le pattern MVC et est purement écrit en Javascript. Son objectif premier était de découpler la logique d’une application 
    de la manipulation du DOM, et permettre la mise à jour dynamique des pages Web.<br>
    Un concept intéressant de data binding a été introduit, qui impliquait des mises à jour automatiques de la vue lorsque le modèle (données) était modifié, et inversement.<br>
-   La premiere version stable de Angular 2 sort en 2016 et change completement l'architecture qui devient plus robuste.<br>
-   Avec l'arrivee d'Angular 4, le framework commence a utilise le TypeScript. Le code ecrit en TypeScript est
-   compile en JS et la version de TypeScript evolue entre la version 2 et 4.<br>
+   La première version stable de Angular 2 sort en 2016 et change complètement l'architecture qui devient plus robuste.<br>
+   Avec l'arrivée d'Angular 4, le framework commence a utilisé le TypeScript. Le code écrit en TypeScript est
+   compilé en JS et la version de TypeScript évolue entre la version 2 et 4.<br>
    Angular 5 arrive en 2017 en gardant la
-   meme structure que son predecesseur mais en ajoutant certaines nouvelles fonctionalites.<br>
-   Angular 6 et 7 s'en suivront avec toujours la meme logique mais avec des ameliorations niveau fonctionalite comme l'arrivee des Web Components.  
+   même structure que son prédécesseur mais en ajoutant certaines nouvelles fonctionnalités.<br>
+   Angular 6 et 7 s'en suivront avec toujours la même logique mais avec des améliorations niveau fonctionnalité comme l'arrivée des Web Components.  
 </p>
 <h5 class="text-left mt-4 ml-4 heading">2.1 - Un point sur Node.js</h5>
 <p>
     Node.js est un environnement permettant d'exécuter des applications 
     JavaScript en dehors du navigateur. 
     Il s'agit d'un outil libre et à code source ouvert utilisé pour créer des applications JS côté serveur.<br>
-    Pour creer notre premiere application Angular, il nous faut d'abord installer Node.js pas parcequ'on va faire du
-    JavaScript serveur mais pour pouvoir utiliser npm (Node Package Manager) afin de gerer les dependences de notre projet Angular.
-    NPM rassemble des milliers de packages gratuits disponibles en telechargement avec Node dont tous les modules d'Angular.<br>
-    Node.js est disponible en telechargement sur ce <a href="https://nodejs.org/en/">lien</a> et vient avec npm out of the box 😉.
+    Pour créer notre première application Angular, il nous faut d'abord installer Node.js pas parceque l'on va faire du
+    JavaScript serveur mais pour pouvoir utiliser npm (Node Package Manager) afin de gérer les dépendances de notre projet Angular.
+    NPM rassemble des milliers de packages gratuits disponibles en téléchargement avec Node dont tous les modules d'Angular.<br>
+    Node.js est disponible en téléchargement sur ce <a href="https://nodejs.org/en/">lien</a> et vient avec npm out of the box 😉.
 </p>
 <h5 class="text-left mt-4 ml-4 heading">2.2 - Notre premiere installation Angular</h5>
+<p>
+    Angular dispose d'une excellente ligne de commande permettant d'executer un bon nombre de taches d'une maniere tres rapide.
+    La ligne de commande est disponible sur npm sous le nom de package <a href="">@angular/cli</a>, on peut donc le telecharger et creer notre
+    premiere application.<br>
+    Pour telecharger la CLI on peut executer la commande <code>npm install -g @angular/cli</code> sur notre console et laisser Node faire le reste.<br>
+    Avec la CLI ready on peut creer notre premier projet avec la commande<br> <code>ng new nom_de_notre_projet</code> . Ceci va creer un nouveau dossier avec le 
+    nom de notre projet et telecharger toutes les dependances necessaires pour pouvoir demarrer notre app 😎.<br>
+    Voila, notre premiere application Angular est prete, pour y acceder il faudra demarrer notre serveur de developpement avec la commande <code>ng serve</code>.
+    Par defaut le serveur se lance sur le port 4200, il faudra donc ouvrir un navigateur et aller a l'url http://localhost:4200 💪.<br>
+    Si vous voyez l'application par défaut d'Angular bravooo vous venez d'entrer dans le monde d'Angular un peu comme ce <span id="trigger-happy">gars</span>.<br>
+    <center><img src="./images/happy-guy.gif" alt="" id="happy" srcset="" class=""></center>
+
+</p>
+<script>
+    $('#happy').hide();
+    $('#trigger-happy').click(function(){
+        $('#happy').show(1000);
+    })
+</script>
