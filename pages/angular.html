@@ -36,9 +36,65 @@
 
 </p>
 <h5 class="text-left mt-4 ml-4 heading">2.3 - Structure du framework</h5>
+<div class="structure">
+    <div class="ml-2">
+        <ul>
+            <li>
+                <i class="fa fa-folder"></i> e2e
+                <p class="ml-2 mt-1">
+                    Regroupe l'ensemble des tests end to end qu'on execute avec Angular
+                </p>
+            </li>
+            <li>
+                <i class="fa fa-folder"></i> node_modules
+                <p class="ml-2 mt-1">
+                    L'ensemble des dépendances de notre projet se trouve dans ce dossier y compris le coeur d'Angular.
+                </p>
+            </li>
+            <li>
+                <i class="fa fa-folder"></i> src
+                <p class="ml-2 mt-1">
+                    Ce dossier represente toute la logique de notre application. Les composants, services, directives et modules seront créés dans le dossier app de ce dernier. 
+                    Nos assets et aussi certains fichiers de config se trouvent dans ce dossier.
+                </p>
+            </li>
+            <li>
+                <i class="fa fa-file-code-o"></i> angular.json
+                <p class="ml-2 mt-1">
+                    Ce fichier represente l'identité de notre projet et permet de définir les configurations de base tel que les paramétres de build, de test ainsi que les fichiers CSS et JS 
+                    requises par nos templates.
+                </p>
+            </li>
+            <li>
+                <i class="fa fa-file-code-o"></i> package.json
+                <p class="ml-2 mt-1">
+                    L'ensemble des dépendances de notre projet est listé dans ce fichier avec leur version, le dossier node_modules est créé a partir de ce fichier.
+                    La commande <code>npm install</code> interroge ce fichier pour pouvoir aller chercher les dépendances requises par notre projet. C'est l'equivalent du fichier
+                    composer.json pour les PHP guys.
+                </p>
+            </li>
+            <li>
+                <i class="fa fa-file-code-o"></i> tsconfig.json
+                <p class="ml-2 mt-1">
+                    Angular a partir de la version 4 tourne avec le TypeScript. Ce fichier permet ainsi de définir les configurations de base de TypeScript.
+                </p>
+            </li>
+            <li>
+                <i class="fa fa-file-code-o"></i> tslint.json
+                <p class="ml-2 mt-1">
+                    Ce fichier represente la configuration de base pour TSLint
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+<h5 class="text-left mt-4 ml-4 heading">2.4 - Checkpoint</h5>
 <p>
-   
+    Nous venons d'installer notre premiere application Angular avec la CLI et avons parcouru la structure du framework afin d'avoir
+    une meilleure comprehension de celle ci. Notre prochaine etape consiste donc a voir les building blocks c'est a dire les elements principals
+    qui constituent toute application Angular. <b>Let's GO</b> 👊.
 </p>
+
 <script>
     $('#happy').hide();
     $('#trigger-happy').click(function(){

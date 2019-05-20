@@ -53,3 +53,9 @@ p {
   -webkit-animation-name: pulse;
   animation: pulse 1s infinite;
 }
+.structure{
+  display: flex;
+}
+.structure ul{
+  list-style-type: none;
+}
