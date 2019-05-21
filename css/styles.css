@@ -59,3 +59,7 @@ p {
 .structure ul{
   list-style-type: none;
 }
+.component{
+  color: rgb(202, 29, 29);
+  font-style: italic;
+}
