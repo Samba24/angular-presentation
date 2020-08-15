@@ -9,7 +9,7 @@ $(document).ready(function(){
         event.preventDefault()
         var page = $(this).attr('target-page')
         $('#toc').find('li a.active').removeClass('active');
-        $(`.nav-link[target-page='${page}']`).addClass('active')
+        $(".nav-link[target-page='hands-on']").addClass('active')
         // $(this).addClass('active');
         $("#main-content").load(`./pages/${page}.html`);
     })

@@ -98,18 +98,9 @@
     <a href="#" target-page="building-blocks" id="next" class="next offset-10 ngColor"><i class="fa fa-arrow-circle-o-right mr-2"></i>Suivant</a>
 </div>
 
-
 <script>
     $('#happy').hide();
     $('#trigger-happy').click(function(){
         $('#happy').show(1000);
-    })
-    $('.next').click(function (event) {
-        event.preventDefault()
-        var page = $(this).attr('target-page')
-        $('#toc').find('li a.active').removeClass('active');
-        $(".nav-link[target-page='building-blocks']").addClass('active')
-        // $(this).addClass('active');
-        $("#main-content").load(`./pages/${page}.html`);
     })
 </script>

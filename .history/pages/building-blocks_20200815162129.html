@@ -145,7 +145,7 @@
         event.preventDefault()
         var page = $(this).attr('target-page')
         $('#toc').find('li a.active').removeClass('active');
-        $(".nav-link[target-page='hands-on']").addClass('active')
+        $(".nav-link[target-page='building-blocks']").addClass('active')
         // $(this).addClass('active');
         $("#main-content").load(`./pages/${page}.html`);
     })

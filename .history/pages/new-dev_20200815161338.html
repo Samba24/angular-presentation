@@ -46,16 +46,5 @@
     </center>
 </div>
 <div class="mb-5">
-<a href="#" target-page="angular" id="next" class="next offset-10 ngColor"><i class="fa fa-arrow-circle-o-right mr-2"></i>Suivant</a>
+<a href="#" target-page="-dev" id="next" class="next offset-10 ngColor"><i class="fa fa-arrow-circle-o-right mr-2"></i>Suivant</a>
 </div>
-
-<script>
-    $('.next').click(function (event) {
-        event.preventDefault()
-        var page = $(this).attr('target-page')
-        $('#toc').find('li a.active').removeClass('active');
-        $(".nav-link[target-page='angular']").addClass('active')
-        // $(this).addClass('active');
-        $("#main-content").load(`./pages/${page}.html`);
-    })
-</script>
